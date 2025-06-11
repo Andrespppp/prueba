@@ -1,6 +1,6 @@
 # AulaTec
 
-## 📚 Resumen del Proyecto
+##  Resumen del Proyecto
 
 **AulaTec** es una plataforma web desarrollada con **Laravel** y **MySQL** que permite a los alumnos **reservar puestos en aulas educativas** mediante un **mapa interactivo**, registrar su asistencia con **códigos QR** y gestionar sus reservas de forma autónoma. El objetivo es optimizar el uso de los espacios educativos y mejorar la gestión del control de asistencia de forma digital y accesible.
 
@@ -16,7 +16,7 @@ El sistema está diseñado para su uso en centros educativos (institutos, univer
 
 ---
 
-## 🗂️ Estructura del Proyecto
+##  Estructura del Proyecto
 
 El repositorio está organizado en carpetas que siguen el ciclo de vida de desarrollo del proyecto. A continuación, se describe el contenido de cada una:
 
@@ -78,7 +78,7 @@ Contiene el documento final del proyecto en formato PDF:
 - Puerto **3306** libre (o editarlo si ya está en uso).
 - Clonar el repositorio de GitHub.
 
-### 🧰 Pasos de instalación
+###  Pasos de instalación
 
 1. **Clona el repositorio:**
 
