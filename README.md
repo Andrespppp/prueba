@@ -7,18 +7,18 @@
 Entre sus funcionalidades principales destacan:
 
 - **Reserva de puestos a través de un mapa visual del aula.**
+- **Sistema de intercambio de reservas entre alumnos.**
 - **Generación y escaneo de códigos QR** para registrar la asistencia.
 - **Gestión de faltas justificadas** mediante formularios personalizados.
-- **Sistema de intercambio de reservas entre alumnos.**
 - **Panel de administración para docentes y gestores del aula.**
 
-El sistema está diseñado para su uso en centros educativos (institutos, universidades, academias) y busca fomentar el **uso eficiente de los recursos**, **reducir el absentismo** y facilitar el **seguimiento académico**.
+El sistema está diseñado para su uso en centros educativos (institutos, universidades, academias) y busca fomentar el **uso eficiente de los recursos**, **reducir las faltas** y facilitar el **seguimiento académico**.
 
 ---
 
 ##  Estructura del Proyecto
 
-El repositorio está organizado en carpetas que siguen el ciclo de vida de desarrollo del proyecto. A continuación, se describe el contenido de cada una:
+El repositorio está organizado en carpetas que siguen el ciclo de vida de desarrollo del proyecto. A continuación, dentro de la carpeta AulaTec, se describe el contenido de cada una:
 
 ### 1. `Análisis/`
 Contiene los documentos iniciales del proyecto:
@@ -29,50 +29,38 @@ Contiene los documentos iniciales del proyecto:
 
 ### 2. `Base de Datos/`
 Incluye todo lo relacionado con la base de datos:
-- Diagrama entidad-relación (ER).
-- Scripts SQL de creación y carga inicial.
-- Backups y documentación de las relaciones.
-- Configuración de conexión Laravel a MySQL.
+- Script SQL de creación.
+- Modelo Relacional.
 
 ### 3. `Desarrollo/`
 Contiene el código fuente del sistema:
 - Estructura del proyecto Laravel (`app/`, `routes/`, `resources/`, etc.).
-- Lógica de backend (controladores, modelos, migraciones).
-- Módulos para la generación y lectura de QR.
-- Scripts personalizados y comandos para mantenimiento.
+- Código fuente de la página web.
 
 ### 4. `Diseño/`
 Incluye los recursos de interfaz y diseño visual:
-- Bocetos y wireframes.
 - Prototipos en Figma o similares.
-- Mapa interactivo del aula.
-- Paleta de colores y tipografías utilizadas.
+- Diseño de las pantallas.
+- Mockups.
 
 ### 5. `Implementación/`
 Describe el despliegue del proyecto:
-- Archivos `Dockerfile`, `docker-compose.yml` y `.env`.
-- Instrucciones de instalación y configuración.
-- Scripts de inicialización.
-- Información sobre entornos locales y producción.
+- Cartel publicitario A3.
+- Documentación de las pruebas del código.
 
 ### 6. `Mantenimiento/`
 Incluye documentación y scripts para el mantenimiento del sistema:
-- Estrategias de copia de seguridad.
-- Actualización de dependencias.
-- Logs y monitoreo del sistema.
-- Registro de bugs y soluciones.
+- Plan de la fase de mantenimiento.
 
 ### 7. `Paper/`
 Contiene el documento final del proyecto en formato PDF:
 - Memoria del TFG.
-- Anexos y capturas.
-- Información legal y licencias.
 
 ---
 
-## 🛠️ Manual de Instalación (Docker)
+##  Manual de Instalación (Docker)
 
-### 🧾 Requisitos previos
+###  Requisitos previos
 
 - Tener instalado [Docker](https://www.docker.com/) y [Docker Compose](https://docs.docker.com/compose/).
 - Puerto **3306** libre (o editarlo si ya está en uso).
