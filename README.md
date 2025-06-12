@@ -134,7 +134,7 @@ La documentación completa está disponible en las respectivas carpetas del proy
 
 ## Licencia
 
-Este proyecto está licenciado bajo la Licencia MIT - consulta el archivo [LICENSE](LICENSE) para más detalles.
+Este proyecto está licenciado bajo la Licencia MIT.
 
 ## Soporte
 
@@ -142,10 +142,9 @@ Para soporte y consultas, por favor abre un issue en el repositorio de GitHub o 
 
 ## Agradecimientos
 
-- Comunidad Laravel por el framework robusto
-- Instituciones educativas que proporcionaron feedback de requisitos
+- Profesores e Investigadores de la Unidad Docente de Informática Industrial de la Universidad Politécnica de Madrid
 - Colaboradores y testers que ayudaron a mejorar el sistema
 
 ---
 
-**Hecho con ❤️ para una mejor gestión educativa**
+**Hecho con ❤️ por [Alejandro Pérez](https://www.linkedin.com/in/alejandro-pérez-rentero-396033265/) y [Andrés Patrascu](https://www.linkedin.com/in/andres-patrascu-85b572333/) para una mejor gestión educativa**
