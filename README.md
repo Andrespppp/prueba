@@ -112,7 +112,7 @@ docker-compose down -v --remove-orphans
 - **Frontend**: Plantillas Blade, JavaScript
 - **Contenedorización**: Docker y Docker Compose
 - **Autenticación**: Laravel Auth
-- **Códigos QR**: Librería PHP QR Code
+- **Códigos QR**: Librería PHP Bacon QR Code
 
 ## Contribuciones
 
