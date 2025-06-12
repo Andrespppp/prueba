@@ -69,6 +69,7 @@ Contiene el documento final del proyecto en formato PDF:
 ###  Pasos de instalación
 
 1. **Clona el repositorio:**
+2. comando instalación docker en wsl
 
 ```bash
 git clone https://github.com/tu_usuario/AulaTec.git
