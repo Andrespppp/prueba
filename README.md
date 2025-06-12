@@ -1,114 +1,150 @@
 # AulaTec
 
-##  Resumen del Proyecto
+**Sistema Inteligente de Gestión de Aulas**
 
-**AulaTec** es una plataforma web desarrollada con **Laravel** y **MySQL** que permite a los alumnos **reservar puestos en aulas educativas** mediante un **mapa interactivo**, registrar su asistencia con **códigos QR** y gestionar sus reservas de forma autónoma. El objetivo es optimizar el uso de los espacios educativos y mejorar la gestión del control de asistencia de forma digital y accesible.
+[![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)](https://laravel.com/)
+[![MySQL](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white)](https://www.mysql.com/)
+[![Docker](https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/)
 
-Entre sus funcionalidades principales destacan:
+## Descripción General
 
-- **Reserva de puestos a través de un mapa visual del aula.**
-- **Sistema de intercambio de reservas entre alumnos.**
-- **Generación y escaneo de códigos QR** para registrar la asistencia.
-- **Gestión de faltas justificadas** mediante formularios personalizados.
-- **Panel de administración para docentes y gestores del aula.**
+AulaTec es una plataforma web integral desarrollada con Laravel y MySQL que revoluciona la gestión de aulas en instituciones educativas. El sistema permite a los estudiantes reservar asientos a través de un mapa interactivo del aula, registrar su asistencia mediante códigos QR y gestionar sus reservas de forma autónoma, optimizando el uso de espacios educativos y simplificando la gestión de asistencia.
 
-El sistema está diseñado para su uso en centros educativos (institutos, universidades, academias) y busca fomentar el **uso eficiente de los recursos**, **reducir las faltas** y facilitar el **seguimiento académico**.
+## Características Principales
 
----
+- **🗺️ Reserva Interactiva de Asientos**: Mapeo visual del aula para selección intuitiva de asientos
+- **🔄 Sistema de Intercambio Dinámico**: Transferencia de reservas entre estudiantes
+- **📱 Integración con Códigos QR**: Seguimiento automatizado de asistencia mediante escaneo QR
+- **📝 Gestión de Ausencias**: Flujo digital de envío y aprobación de faltas justificadas
+- **👨‍🏫 Panel Administrativo**: Panel de gestión integral para educadores y administradores
+- **📊 Analíticas e Informes**: Estadísticas de uso en tiempo real y reportes de asistencia
 
-##  Estructura del Proyecto
+## Público Objetivo
 
-El repositorio está organizado en carpetas que siguen el ciclo de vida de desarrollo del proyecto. A continuación, dentro de la carpeta AulaTec, se describe el contenido de cada una:
+Diseñado para instituciones educativas incluyendo:
+- Universidades y centros de educación superior
+- Institutos y centros de educación secundaria
+- Academias de formación
+- Centros de formación corporativa
 
-### 1. `Análisis/`
-Contiene los documentos iniciales del proyecto:
-- Estudio del problema.
-- Requisitos funcionales y no funcionales.
-- Casos de uso.
-- Diagramas UML (casos de uso, clases, actividades).
+## Arquitectura
 
-### 2. `Base de Datos/`
-Incluye todo lo relacionado con la base de datos:
-- Script SQL de creación.
-- Modelo Relacional.
+El sistema sigue una arquitectura modular que promueve la utilización eficiente de recursos, reduce el absentismo y facilita el seguimiento académico integral.
 
-### 3. `Desarrollo/`
-Contiene el código fuente del sistema:
-- Estructura del proyecto Laravel (`app/`, `routes/`, `resources/`, etc.).
-- Código fuente de la página web.
+## Estructura del Proyecto
 
-### 4. `Diseño/`
-Incluye los recursos de interfaz y diseño visual:
-- Prototipos en Figma o similares.
-- Diseño de las pantallas.
-- Mockups.
-
-### 5. `Implementación/`
-Describe el despliegue del proyecto:
-- Cartel publicitario A3.
-- Documentación de las pruebas del código.
-
-### 6. `Mantenimiento/`
-Incluye documentación y scripts para el mantenimiento del sistema:
-- Plan de la fase de mantenimiento.
-
-### 7. `Paper/`
-Contiene el documento final del proyecto en formato PDF:
-- Memoria del TFG.
-
----
-
-##  Manual de Instalación (Docker)
-
-###  Requisitos previos
-
-- Tener instalado [Docker](https://www.docker.com/) y [Docker Compose](https://docs.docker.com/compose/).
-- Puerto **3306** libre (o editarlo si ya está en uso).
-- Clonar el repositorio de GitHub.
-
-###  Pasos de instalación
-
-1. **Clona el repositorio:**
-2. comando instalación docker en wsl
-
-```bash
-git clone https://github.com/tu_usuario/AulaTec.git
-````
-
-```bash
-cd AulaTec
+```
+AulaTec/
+├── Análisis/              # Análisis del proyecto y requisitos
+│   ├── Casos de uso
+│   ├── Diagramas UML
+│   └── Especificaciones funcionales
+├── Base de Datos/         # Diseño y scripts de base de datos
+│   ├── Scripts SQL de creación
+│   └── Modelo relacional
+├── Desarrollo/            # Código fuente (aplicación Laravel)
+│   ├── app/
+│   ├── routes/
+│   ├── resources/
+│   └── ...
+├── Diseño/               # Recursos de diseño UI/UX
+│   ├── Prototipos Figma
+│   ├── Mockups
+│   └── Diseños de pantallas
+├── Implementación/       # Documentación de despliegue
+│   ├── Material promocional
+│   └── Documentación de pruebas
+├── Mantenimiento/        # Documentación de mantenimiento
+│   └── Planes de mantenimiento
+└── Paper/               # Documentación académica
+    └── Memoria final del proyecto (PDF)
 ```
 
-```bash
-docker-compose up --build -d
-```
+## Inicio Rápido
+
+### Requisitos Previos
+
+- [Docker](https://www.docker.com/) y [Docker Compose](https://docs.docker.com/compose/)
+- Puerto 3306 disponible (o modificar si ya está en uso)
+- Git
+
+### Instalación
+
+1. **Clonar el repositorio**
+   ```bash
+   git clone https://github.com/tu-usuario/AulaTec.git
+   cd AulaTec
+   ```
+
+2. **Construir e iniciar contenedores**
+   ```bash
+   docker-compose up --build -d
+   ```
+
+3. **Configurar permisos**
+   ```bash
+   docker exec -it laravel-docker bash
+   chmod -R 755 /var/www/html
+   chown -R www-data:www-data /var/www/html
+   exit
+   ```
+
+4. **Instalar dependencias y configurar base de datos**
+   ```bash
+   sudo docker exec laravel-docker bash -c "composer update"
+   sudo docker exec laravel-docker bash -c "php artisan migrate"
+   ```
+
+5. **Acceder a la aplicación**
+   Abre tu navegador y navega a `http://localhost`
+
+### Detener la Aplicación
 
 ```bash
 docker-compose down -v --remove-orphans
 ```
 
-```bash
-docker exec -it laravel-docker bash
-```
+## Stack Tecnológico
 
-```bash
-chmod -R 755 /var/www/html
-```
+- **Backend**: Laravel (Framework PHP)
+- **Base de Datos**: MySQL
+- **Frontend**: Plantillas Blade, JavaScript
+- **Contenedorización**: Docker y Docker Compose
+- **Autenticación**: Laravel Auth
+- **Códigos QR**: Librería PHP QR Code
 
-```bash
-chown -R www-data:www-data /var/www/html
-```
+## Contribuciones
 
-```bash
-exit
-```
+¡Damos la bienvenida a las contribuciones a AulaTec! Por favor, lee nuestras pautas de contribución antes de enviar pull requests.
 
-```bash
-sudo docker exec laravel-docker bash -c "composer update"
+1. Haz fork del repositorio
+2. Crea una rama de características (`git checkout -b feature/caracteristica-increible`)
+3. Confirma tus cambios (`git commit -m 'Añadir característica increíble'`)
+4. Sube la rama (`git push origin feature/caracteristica-increible`)
+5. Abre un Pull Request
 
-```
-```bash
-sudo docker exec laravel-docker bash -c "php artisan migrate"
+## Documentación
 
-```
+La documentación completa está disponible en las respectivas carpetas del proyecto:
+- Especificaciones técnicas en `Análisis/`
+- Documentación de base de datos en `Base de Datos/`
+- Guías de despliegue en `Implementación/`
+- Memoria académica en `Paper/`
 
+## Licencia
+
+Este proyecto está licenciado bajo la Licencia MIT - consulta el archivo [LICENSE](LICENSE) para más detalles.
+
+## Soporte
+
+Para soporte y consultas, por favor abre un issue en el repositorio de GitHub o contacta al equipo de desarrollo.
+
+## Agradecimientos
+
+- Comunidad Laravel por el framework robusto
+- Instituciones educativas que proporcionaron feedback de requisitos
+- Colaboradores y testers que ayudaron a mejorar el sistema
+
+---
+
+**Hecho con ❤️ para una mejor gestión educativa**
