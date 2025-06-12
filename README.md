@@ -67,6 +67,7 @@ AulaTec/
 - [Docker](https://www.docker.com/) y [Docker Compose](https://docs.docker.com/compose/)
 - Puerto 3306 disponible (o modificar si ya está en uso)
 - Git
+- IMPRESCINDIBLE crear archivo .env con el contenido del archivo .env.example
 
 ### Instalación
 
@@ -96,7 +97,7 @@ AulaTec/
    ```
 
 5. **Acceder a la aplicación**
-   Abre tu navegador y navega a `http://localhost`
+   Abre tu navegador y navega a `http://localhost:9000`. Puedes ver el panel de la base de datos en `http://localhost:9001` seleccionando sobre la base de datos "fichaje".
 
 ### Detener la Aplicación
 
